@@ -11,6 +11,7 @@
     <header id="header">
       <h1>Alissa's Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -37,12 +38,14 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
+          <li>note: navigate to the directory we want to work within, then...</li>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout main: switches to main branch</li>
+          <li>git pull origin main (to pull the remote main branch into the local main branch so that local and remote branches are in sync)</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
           <li>git add -A (adds the changed files in our local working directory to the staging area of Git)
           <li>git commit -m "added code to HTML file" (commits staged changeds repository; with comments noted by -m in ""</li>
-          <li>git pull origin main (ensures current branch is up to date before opening a PR</li>
+          <li>git pull origin main (ensures current branch is up to date before opening a PR)</li>
           <li>git push origin XYZ [Pushes changes from XYZ (feature) branch to github where it's ready for review]</li>
           </li>
         </ul>
@@ -51,13 +54,36 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>always link .js files at the bottom of the html file b/c it reads top down and will need to read what it's applying JavaScript to</li>
+          <li>/*
+            <br>to insert comments in JavaScript
+            <br> */
+          </li>
+          <li>//This can be used for comments that fit on a single line </li>
+          <li>Assignment =</li>
+          <li>Equality === and returns a true/false (Boolean) result</li>
+          <li>Does Not Equal !, !==</li>
+          <li>Where SHAPES is an array, SHAPES.length, .length is the length of/number of items in the array </li>
+          <li>x++ === x+1</li>
         </ul>
       </section>
+
+      <section class="card" id="javascript-section">
+        <h2>Shortcuts</h2>
+           <ul>
+              <li>VS Code, Comment out: hilight text + "cmd" + "/"" </li>
+              <li>VS Code, click terminal on top menu to open within VS code</li>
+              <li>VS Code, execute a .js file: cd to dir, then "node xyz.js"</li>
+              <li>Terminal, Clear: "ctrl" "L" </li>
+              <li>Open Chrome DevTools: press Command+Option+I</li>
+            </ul>
+          </section>
+
     </main>
 
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
