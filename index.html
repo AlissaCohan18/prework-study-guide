@@ -21,6 +21,15 @@
             <li>The body element represents the visible content shown to the user</li>
             <li>ul stands for unordered lists</li>
           <li>li stands for (bulleted) lists</li>
+          <li>Attributes (red text with in my VS Code scheme) include: class, src, href, id  </li>
+          <li>&lt;br&gt carrot puts a break in the code; (no / for close-carrot) </li>
+          <li>to display open and close carrots in html: & l t and & g t (without the spaces bwn letters) </li>
+          <li>./ will populate options. Example: href="./"</li>
+          <li> class= can tag multiple whereas id= can only have one unique <br>
+                Ex/
+            html: class=“lesson section_1” <br>
+            css: .lesson (proper syntax) width & height size <br>
+                      .section_1 (proper syntax) font, color, et</li>
         </ul>
       </section>
    
@@ -30,8 +39,30 @@
           <li>CSS is for formatting the content</li>
           <li>Margin indicates how much space we want around the outside of an element. ie-space outside of box/border</li>
           <li>Padding indicates how much space we want around the content inside an element. space between content and box/border</li>
-          <li>Use a "," between two selectors to apply rule to multiple. Example: "h1, h2" text-align center </li>
+          <li>Use a "," between two selectors to apply rule to multiple. Ex/ "h1, h2" text-align center </li>
           <li>The "." preceding "card" designates this as a class selector. Any HTML element assigned to the class, card, will gain the property assignments</li>
+          <li>html: class=lesson === css: .lesson <br> 
+              html: &lth1&gt === css: h1<br>
+              html: id=“github” === css: #github </li>
+          <li>Can assign characteristics to Mult by using a ,
+            Ex/ 
+                header,
+                footer {
+                   color: red
+                } 
+            </li>
+          <li>the * is a wild card to select/apply to everything. <br> Ex/
+            * {
+              font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            } <br>
+            
+            html: &ltp&gt blah blah blah &lt/p&gt <br>
+            css: the below will apply to everything with a p-tag<br>
+            p {
+              font-size: 60px;
+              line-height: 200px;
+            }
+            </li>
         </ul>
       </section>
    
@@ -44,11 +75,16 @@
           <li>git checkout featureXYZ: switches to the featureXYZ branch</li>
           <li>git pull origin main (to pull the remote main branch into the local main branch so that local and remote branches are in sync)</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>git add -A (adds the changed files in our local working directory to the staging area of Git)
+          <li>git add -A (adds the changed files in our local working directory to the staging area of Git)</li>
           <li>git commit -m "added code to HTML file" (commits staged changeds repository; with comments noted by -m in ""</li>
           <li>git pull origin main (ensures current branch is up to date before opening a PR)</li>
           <li>git push origin XYZ [Pushes changes from XYZ (feature) branch to github where it's ready for review]</li>
+          <li>git init: use when you have existing content in a local directory/computer and want to create a new repo on git</li>
+          <li>git log: returns details regarding commits
+          <li>git remote -v: Checks if there is a git repo associated with dir</li>
+          <li>To add SSH key for the session so won't be prompted for password again, in terminal-> ssh-add
           </li>
+        </li>
         </ul>
       </section>
    
@@ -70,18 +106,35 @@
         </ul>
       </section>
 
-      <section class="card" id="javascript-section">
-        <h2>Shortcuts</h2>
+      <section class="card" id="vscode-section">
+        <h2>VS Code Shortcuts</h2>
            <ul>
-              <li>VS Code, Comment out: hilight text + "cmd" + "/"" </li>
-              <li>VS Code, click terminal on top menu to open within VS code</li>
-              <li>VS Code, move line in code by highlighting and Option(Alt)+arrow</li>
-              <li>VS Code, execute a .js file: cd to dir, then "node xyz.js"</li>
-              <li>Terminal, Clear: "ctrl" "L" </li>
-              <li>Open Chrome DevTools: press Command+Option+I</li>
+              <li>Opens vscode, in this directory, in a <strong>n</strong>ew window: code . -n </li>
+              <li>Open vscode, in this directory, and in current window (<strong>r</strong>euse): code . -r </li>
+              <li>Comment out: highlight text + "cmd" + "/"" </li>
+              <li>Click terminal on top menu to open within VS code</li>
+              <li>Move line in code by highlighting and Option(Alt)+arrow</li>
+              <li>Mass editing: highlight a word, cmd+F2 ‘find (and edit) all’</li>
+              <li>cmd+b toggles the left directories bar open/close </li>
+              <li>Execute a .js file: cd to dir, then "node xyz.js"</li>
             </ul>
           </section>
 
+          <section class="card" id="schortcuts-section">
+            <h2>Misc Shortcuts</h2>
+               <ul>
+                  <li>Terminal, Clear: "ctrl" "L" </li>
+                  <li>Copying directories for HW: cp -r location.of.files.find.by.using.pwd/* .  </li>
+                      <li>cp : copy</li>
+                      <li>-r : grabs all sub folders</li>
+                      <li>/* : copy contents of directory, but not directory/folder itself</li>  
+                  <li>To find details on codes from terminal: man </li> 
+                      <li>example for getting details on rm: man rm  </li>
+                      <li>note: it opens a manual; type “q” to quit when done</li> 
+                  <li>Terminal: type Ctrl+C when terminal is locked up</li>
+                  <li>Open Chrome DevTools: press Command+Option+I</li>
+                </ul>
+              </section>
     </main>
 
     <footer>
